@@ -13,7 +13,7 @@ export function GetConfigFields(): SomeCompanionConfigField[] {
 			id: 'host',
 			label: 'Axia Device IP',
 			width: 8,
-			regex: Regex.IP,
+			regex: Regex.HOSTNAME,
 		},
 		{
 			type: 'number',
