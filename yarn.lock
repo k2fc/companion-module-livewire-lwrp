@@ -1807,9 +1807,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"telos-axia-lwrp@workspace:.":
+"livewire-lwrp@workspace:.":
   version: 0.0.0-use.local
-  resolution: "telos-axia-lwrp@workspace:."
+  resolution: "livewire-lwrp@workspace:."
   dependencies:
     "@companion-module/base": "npm:2.0.4"
     "@companion-module/tools": "npm:^3.0.1"

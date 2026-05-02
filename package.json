@@ -1,5 +1,5 @@
 {
-	"name": "telos-axia-lwrp",
+	"name": "livewire-lwrp",
 	"version": "0.1.1",
 	"main": "dist/main.js",
 	"type": "module",

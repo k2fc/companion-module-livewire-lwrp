@@ -1,14 +1,14 @@
 {
 	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
 	"type": "connection",
-	"id": "telos-axia-lwrp",
-	"name": "telos-axia-lwrp",
+	"id": "livewire-lwrp",
+	"name": "livewire-lwrp",
 	"shortname": "axia-lwrp",
 	"description": "Telos Axia Livewire Routing Protocol (LWRP)",
 	"version": "0.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/k2fc/companion-module-telos-axia-lwrp.git",
-	"bugs": "https://github.com/k2fc/companion-module-telos-axia-lwrp/issues",
+	"repository": "git+https://github.com/k2fc/companion-module-livewire-lwrp.git",
+	"bugs": "https://github.com/k2fc/companion-module-livewire-lwrp/issues",
 	"maintainers": [
 		{
 			"name": "Dennis Graiani",
