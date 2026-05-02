@@ -93,9 +93,7 @@ export function UpdateActions(self: ModuleInstance): void {
 				const dst = action.options.dst
 				const src = action.options.src
 
-				const src_int = parseInt(src)
-				if (src_int === undefined) self.sendCommand(`DST ${dst} ADDR:"${src}"`)
-				else self.sendCommand(`DST ${dst} ADDR:${src}`)
+				self.sendCommand(`DST ${dst} ADDR:"${src}"`)
 			},
 		},
 	})
