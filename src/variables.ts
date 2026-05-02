@@ -1,14 +1,12 @@
 import { ModuleInstance } from './main.js'
 
 export type VariablesSchema = {
-	variable1: string
-	variable2: string
-	variable3: string
+	hostname: string
 }
 
 export function UpdateVariableDefinitions(self: ModuleInstance): void {
 	const variableDefinitions: any = {}
-
+	variableDefinitions['hostname'] = { name: 'Device hostname' }
 	for (let i = 1; i <= self.DestCount; i++) {
 		variableDefinitions[`dst_${i}_name`] = { name: `Destination ${i} Name` }
 		variableDefinitions[`dst_${i}_addr`] = { name: `Destination ${i} Source Address` }

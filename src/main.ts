@@ -101,6 +101,7 @@ export class ModuleInstance extends InstanceBase<ModuleSchema> {
 			this.socket.on('connect', () => {
 				this.log('info', 'Connected to LWRP Server. Sending subscriptions...')
 				this.sendCommand('VER')
+				this.sendCommand('IP')
 				this.sendCommand('DST')
 				this.sendCommand('SRC')
 				this.sendCommand('ADD GPI')
@@ -207,6 +208,17 @@ export class ModuleInstance extends InstanceBase<ModuleSchema> {
 				this.updateVariableDefinitions()
 				this.updateStatus(InstanceStatus.Ok)
 				break
+			}
+			case 'IP': {
+				for (let i = 1; i < parts.length - 1; i += 2) {
+					const key = parts[i]
+					const value = parts[i + 1]
+					switch (key) {
+						case 'hostname': {
+							variables['hostname'] = value
+						}
+					}
+				}
 			}
 		}
 		this.setVariableValues(variables)
