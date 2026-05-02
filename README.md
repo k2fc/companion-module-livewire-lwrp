@@ -1,4 +1,6 @@
-# companion-module-[replace with module name]
+# companion-module-telos-axia-lwrp
+
+This is a module for Bitfocus Companion to control an Axia node (or other Livewire device) with Livewire Routing Protocol (LWRP). It can set the source address of destinations and GPI/GPO states.
 
 See [HELP.md](./companion/HELP.md) and [LICENSE](./LICENSE)
 

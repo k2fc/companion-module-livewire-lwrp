@@ -3,6 +3,7 @@ import { Regex, type SomeCompanionConfigField } from '@companion-module/base'
 export type ModuleConfig = {
 	host: string
 	port: number
+	password: string
 }
 
 export function GetConfigFields(): SomeCompanionConfigField[] {
@@ -10,18 +11,24 @@ export function GetConfigFields(): SomeCompanionConfigField[] {
 		{
 			type: 'textinput',
 			id: 'host',
-			label: 'Target IP',
+			label: 'Axia Device IP',
 			width: 8,
 			regex: Regex.IP,
 		},
 		{
 			type: 'number',
 			id: 'port',
-			label: 'Target Port',
+			label: 'LWRP Port',
 			width: 4,
 			min: 1,
 			max: 65535,
-			default: 8000,
+			default: 93,
+		},
+		{
+			type: 'textinput',
+			id: 'password',
+			label: 'Password',
+			width: 6,
 		},
 	]
 }
