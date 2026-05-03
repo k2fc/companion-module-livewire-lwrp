@@ -106,7 +106,7 @@ export class ModuleInstance extends InstanceBase<ModuleSchema> {
 				this.sendCommand('SRC')
 				this.sendCommand('ADD GPI')
 				this.sendCommand('ADD GPO')
-				if (!this.config.password) {
+				if (this.config.password) {
 					this.sendCommand(`LOGIN ${this.config.password}`)
 				} else {
 					this.sendCommand('LOGIN')
