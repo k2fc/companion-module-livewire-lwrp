@@ -1392,6 +1392,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"livewire-lwrp@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "livewire-lwrp@workspace:."
+  dependencies:
+    "@companion-module/base": "npm:2.0.4"
+    "@companion-module/tools": "npm:^3.0.1"
+    "@types/node": "npm:^22.19.17"
+    eslint: "npm:^9.39.4"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^16.4.0"
+    prettier: "npm:^3.8.3"
+    rimraf: "npm:^6.1.3"
+    typescript: "npm:~6.0.3"
+    typescript-eslint: "npm:^8.59.0"
+  languageName: unknown
+  linkType: soft
+
 "locate-path@npm:^6.0.0":
   version: 6.0.0
   resolution: "locate-path@npm:6.0.0"
@@ -1806,23 +1823,6 @@ __metadata:
   checksum: 10c0/5c65b8084799bde7a791593a1c1a45d3d6ee98182e3700b24c247b7b8f8654df4191642abbdb07ff25043d45dcff35620827c3997b88ae6c12040f64bed5076b
   languageName: node
   linkType: hard
-
-"livewire-lwrp@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "livewire-lwrp@workspace:."
-  dependencies:
-    "@companion-module/base": "npm:2.0.4"
-    "@companion-module/tools": "npm:^3.0.1"
-    "@types/node": "npm:^22.19.17"
-    eslint: "npm:^9.39.4"
-    husky: "npm:^9.1.7"
-    lint-staged: "npm:^16.4.0"
-    prettier: "npm:^3.8.3"
-    rimraf: "npm:^6.1.3"
-    typescript: "npm:~6.0.3"
-    typescript-eslint: "npm:^8.59.0"
-  languageName: unknown
-  linkType: soft
 
 "tinyexec@npm:^1.0.4":
   version: 1.1.2

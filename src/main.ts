@@ -136,6 +136,25 @@ export class ModuleInstance extends InstanceBase<ModuleSchema> {
 			case 'BEGIN':
 			case 'END':
 				break
+			case 'ERROR': {
+				const errNo = parseInt(parts[1])
+				switch (errNo) {
+					case 1004: {
+						this.log('error', 'Incorrect Password')
+						this.updateStatus(InstanceStatus.InsufficientPermissions, 'Incorrect LWRP Password')
+						break
+					}
+					default: {
+						let errMsg = ''
+						for (let i = 2; i < parts.length; i++) {
+							errMsg += `${parts[i]} `
+						}
+						this.log('info', errMsg)
+						break
+					}
+				}
+				break
+			}
 			case 'DST': {
 				const dstPort = parseInt(parts[1])
 				while ((match = regex.exec(message)) !== null) {
